@@ -7,10 +7,10 @@
 % par(mfrow=c(filas,columnas))
 % stargazer and report table packages
 
-\usepackage[utf8]{inputenc}
+\usepackage[utf8]{inputenc} % para espa�ol
 \usepackage{longtable}
 
-\begin{document}
+\begin{document} % Comienza latex
 \SweaveOpts{concordance=TRUE}
 
 LOS INDICES DEL MUNDO
@@ -28,7 +28,7 @@ Exploración Univariada
 
 En esta sección exploro cada índice.
 
-
+%No muestres mi codigo
 <<getData, echo=FALSE>>=
 # carga de datos
 filename="indexes.csv"
@@ -45,7 +45,7 @@ level3=c("muy malo","medio","muy bueno")
 Este es el comportamiento de las variables a estudiar. Veamos su tabla de frecuencias:
 
 <<results=tex,echo=FALSE>>=
-library(reporttools)
+library(reporttools)    
 library(xtable)
 
 titulo <- "Tablas de Frecuencia de la variables en estudio"
